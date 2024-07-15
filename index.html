@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body>
+    <!-- Campo Cifrar -->
+    <div class="contenedor">
+        <div class="logo">
+            <img src="IMG/img.png">
+        </div>
+        <div class="campo-cifrar">
+            <textarea id="inputText" placeholder="Ingrese Texto Aquí" class="inputText"></textarea>
+            <br>
+            <div class="contenedor-botones">
+                <button onclick="encriptar()" class="primer-boton">Encriptar</button>
+                <button onclick="desencriptar()" class="segundo-boton">Desencriptar</button>
+            </div>
+        </div>
+
+        <!-- Campo Descifrar -->
+
+        <div class="campo-descifrar">
+            <div class="textarea">
+                <textarea id="outputText" placeholder="Resultado..." class="inputText segundo-inputText"
+                    readonly></textarea>
+            </div>
+            <div class="contenedor-boton">
+                <!-- Copiar Texto -->
+                <button onclick="copiar()" class="segundo-boton">Copiar</button>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
