@@ -1,0 +1,28 @@
+@use '../base/variables' as v;
+
+
+.cifrar--contenedor-botones {
+    display: flex;
+    width: 100%;
+}
+
+// Boton Encriptar
+.encriptar {
+    background-color: v.$secundario;
+    color: v.$primarioOscuro;
+}
+
+.encriptar:hover {
+    background-color: v.$secundarioClaro;
+}
+
+// Boton Desencriptar
+.desencriptar {
+    background-color: v.$secundario;
+    color: v.$primarioOscuro;
+    border: 1px solid v.$secundario;
+}
+
+.desencriptar:hover {
+    background-color: v.$secundarioClaro;
+}

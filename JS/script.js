@@ -1,21 +1,37 @@
+
 function encriptar() {
     let texto = document.getElementById('inputText').value;
-    let textoEncriptado = texto.replace(/e/g, "enter")
-                                .replace(/i/g, "imes")
-                                .replace(/a/g, "ai")
-                                .replace(/o/g, "ober")
-                                .replace(/u/g, "ufat");
-    document.getElementById('outputText').value = textoEncriptado
+    let textoEncriptado = texto.replace(/e/gi, "enter")
+        .replace(/i/gi, "imes")
+        .replace(/a/gi, "ai")
+        .replace(/o/gi, "ober")
+        .replace(/u/gi, "ufat");
+
+    // Verificar si el textarea ya existe antes de asignar el valor
+    let outputTextarea = document.getElementById('outputText');
+    if (outputTextarea) {
+        outputTextarea.value = textoEncriptado;
+    }
 }
+
+function copiar() {
+    let outputTextarea = document.getElementById('outputText');
+    if (outputTextarea) {
+        outputTextarea.select();
+        document.execCommand('copy');
+        alert('Texto copiado al portapapeles');
+    }
+}
+
+
 
 function desencriptar() {
     let texto = document.getElementById('inputText').value;
     let textoDesencriptado = texto.replace(/enter/g, "e")
-                                    .replace(/imes/g, "i")
-                                    .replace(/ai/g, "a")
-                                    .replace(/ober/g, "o")
-                                    .replace(/ufat/g, "u");
-
+        .replace(/imes/g, "i")
+        .replace(/ai/g, "a")
+        .replace(/ober/g, "o")
+        .replace(/ufat/g, "u");
     document.getElementById('outputText').value = textoDesencriptado
 }
 

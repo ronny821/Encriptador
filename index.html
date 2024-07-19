@@ -5,35 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
-    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
 
 <body>
-    <!-- Campo Cifrar -->
     <div class="contenedor">
-        <div class="logo">
-            <img src="IMG/img.png">
+
+        <!-- Campo Historial -->
+        <!-- <div class="campo-historial">
+            <h2>Historial</h2>
         </div>
+         -->
+
+        <!-- Campo Cifrar -->
         <div class="campo-cifrar">
-            <textarea id="inputText" placeholder="Ingrese Texto Aquí" class="inputText"></textarea>
-            <br>
-            <div class="contenedor-botones">
-                <button onclick="encriptar()" class="primer-boton">Encriptar</button>
-                <button onclick="desencriptar()" class="segundo-boton">Desencriptar</button>
+            <div class="contenedor-cifrado">
+                <div class="cifrar-textarea">
+                    <textarea id="inputText" placeholder="Ingrese Texto Aquí" class="inputText"></textarea>
+                </div>
             </div>
+            <div class="cifrar--contenedor-botones">
+                <button onclick="encriptar()" class="encriptar" id="encriptar">Encriptar</button>
+                <button onclick="desencriptar()" class="desencriptar">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="campo-mensaje">
+            <h2>Aún no se han realizado Encriptaciones</h2>
         </div>
 
         <!-- Campo Descifrar -->
-
         <div class="campo-descifrar">
-            <div class="textarea">
-                <textarea id="outputText" placeholder="Resultado..." class="inputText segundo-inputText"
-                    readonly></textarea>
+            <div class="contenedor-descifrado">
+                <div class="descifrar-textarea">
+                    <textarea id="outputText" placeholder="Resultado..." class="inputText segundo-inputText"
+                        readonly></textarea>
+                </div>
             </div>
-            <div class="contenedor-boton">
-                <!-- Copiar Texto -->
-                <button onclick="copiar()" class="segundo-boton">Copiar</button>
-            </div>
+
+            <button onclick="copiar()" class="copiar">Copiar</button>
 
         </div>
     </div>
@@ -41,7 +51,7 @@
 
 
 
-    <script src="JS/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

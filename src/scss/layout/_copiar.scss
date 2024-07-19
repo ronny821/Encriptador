@@ -1,0 +1,12 @@
+@use '../base/variables' as v;
+
+
+.copiar {
+    width: 100%;
+    background-color: v.$secundario;
+    color: v.$primarioOscuro;
+    border: 1px solid v.$secundario;
+}
+.copiar:hover {
+    background-color: v.$secundarioClaro;
+}

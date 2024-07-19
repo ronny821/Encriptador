@@ -1,0 +1,15 @@
+@use '../base/variables' as v;
+
+.campo-mensaje {
+    background-color: v.$blanco;
+    margin: 50px;
+    border-radius: 30px;
+    width: 130rem;
+    display: none;
+
+    h2 {
+        text-align: center;
+        margin: auto;
+        color: v.$primarioOscuro;
+    }
+}

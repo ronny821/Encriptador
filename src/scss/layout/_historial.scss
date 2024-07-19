@@ -1,0 +1,13 @@
+@use '../base/variables' as v;
+
+.campo-historial {
+    background-color: v.$secundarioClaro;
+    width: 100%;
+}
+
+.campo-historial h2 {
+    color: v.$primario;
+    text-align: center;
+    border-bottom: 1px solid;
+    padding-bottom: 1rem;
+}

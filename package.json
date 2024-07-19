@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "dev": "gulp dev"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.8"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

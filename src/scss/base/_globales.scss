@@ -1,0 +1,16 @@
+@use 'variables' as v;
+
+body {
+    background-color: v.$primario;
+}
+
+button {
+    width: 20rem;
+    height: 4rem;
+    margin: 10px;  
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+  }
+
+
