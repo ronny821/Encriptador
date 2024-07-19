@@ -1,0 +1,6 @@
+title: Mi Proyecto Jekyll
+description: Una breve descripción de mi proyecto.
+baseurl: "" # La URL base de tu sitio
+url: "" # La URL completa de tu sitio
+source: github/workspace
+destination: github/workspace/_site
