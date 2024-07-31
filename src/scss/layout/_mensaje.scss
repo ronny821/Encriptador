@@ -1,11 +1,15 @@
 @use '../base/variables' as v;
 
 .campo-mensaje {
-    background-color: v.$blanco;
-    margin: 50px;
-    border-radius: 30px;
-    width: 130rem;
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 30rem;
+    height: 30rem;
+    border: 1px solid blue;
+    margin: 100px;
 
     h2 {
         text-align: center;

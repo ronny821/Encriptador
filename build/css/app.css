@@ -341,62 +341,61 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 30rem;
-  height: 30rem;
+  width: 50rem;
+  height: 50rem;
   border: 1px solid blue;
   margin: 100px;
 }
 
 .contenedor-cifrado {
-  width: 30rem;
-  height: 20rem;
+  width: 50rem;
+  height: 50rem;
   background-color: rgba(0, 0, 0, 0.631372549);
   color: #fdfdfd;
   border: 8px solid #397dd6;
   border-radius: 2rem;
-}
-.contenedor-cifrado .inputText {
-  margin-top: 40px;
-  font-size: 25px;
-  padding-left: 20px;
-}
-.contenedor-cifrado .inputText::placeholder {
-  color: #7f94b1;
-  font-size: 2rem;
+  padding: 45px;
 }
 
 .campo-descifrar {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 30rem;
-  height: 30rem;
+  width: 50rem;
+  height: 50rem;
   border: 1px solid blue;
   margin: 100px;
 }
 
 .contenedor-descifrado {
-  height: 20rem;
-  width: 30rem;
+  padding: 45px;
+  height: 50rem;
+  width: 50rem;
   background-color: rgba(0, 0, 0, 0.631372549);
   color: #fdfdfd;
   border-radius: 2rem;
   border: 8px solid #397dd6;
 }
 
-.descifrar-textarea .inputText {
-  margin-top: 40px;
-  font-size: 25px;
+.inputText {
+  padding-right: 100px;
+  font-size: 45px;
   color: #fdfdfd;
-  padding-left: 20px;
 }
-.descifrar-textarea .inputText .inputText::placeholder {
+.inputText .inputText::placeholder {
+  font-size: 45px;
   color: #7f94b1;
 }
 
 .cifrar--contenedor-botones {
   display: flex;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.encriptar,
+.desencriptar {
   width: 100%;
 }
 
@@ -421,9 +420,11 @@ button {
 
 .copiar {
   width: 100%;
+  height: 100px;
   background-color: #397dd6;
   color: #fdfdfd;
   border: 1px solid #397dd6;
+  margin-top: 50px;
 }
 
 .copiar:hover {
@@ -432,27 +433,40 @@ button {
 
 .campo-historial {
   background-color: #7f94b1;
-  width: 100%;
+  width: 20%;
 }
 
 .campo-historial h2 {
   color: #101146;
   text-align: center;
-  border-bottom: 1px solid;
+  border-bottom: 10px solid;
   padding-bottom: 1rem;
+  font-size: 50px;
+}
+
+.contenedor-historial {
+  width: 100%;
+}
+.contenedor-historial #mensaje {
+  font-size: 40px;
+}
+.contenedor-historial #mensaje div {
+  margin-top: 40px;
+  border-bottom: 1px solid;
 }
 
 .campo-mensaje {
-  background-color: rgba(0, 0, 0, 0.631372549);
-  margin: 50px;
-  border-radius: 30px;
-  width: 130rem;
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 30rem;
+  height: 30rem;
+  border: 1px solid blue;
+  margin: 100px;
 }
 .campo-mensaje h2 {
   text-align: center;
   margin: auto;
   color: #fdfdfd;
 }
-
-/*# sourceMappingURL=app.css.map */

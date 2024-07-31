@@ -12,21 +12,22 @@
     <div class="contenedor">
 
         <!-- Campo Historial -->
-        <!-- <div class="campo-historial">
-            <h2>Historial</h2>
+        <div class="campo-historial">
+            <div class="contenedor-historial">
+                <h2>Historial</h2>
+                <div id="mensaje"></div>
+            </div>
         </div>
-         -->
+
 
         <!-- Campo Cifrar -->
         <div class="campo-cifrar">
             <div class="contenedor-cifrado">
-                <div class="cifrar-textarea">
-                    <textarea id="inputText" placeholder="Ingrese Texto Aquí" class="inputText"></textarea>
-                </div>
+                <textarea id="inputText" placeholder="Ingrese Texto Aquí" class="inputText"></textarea>
             </div>
             <div class="cifrar--contenedor-botones">
-                <button onclick="encriptar()" class="encriptar" id="encriptar">Encriptar</button>
-                <button onclick="desencriptar()" class="desencriptar">Desencriptar</button>
+                <button onclick="encriptar(); mostrarElemento()" class="encriptar" id="encriptar">Encriptar</button>
+                <button onclick="desencriptar(); mostrarElemento();" class="desencriptar">Desencriptar</button>
             </div>
         </div>
 
@@ -37,13 +38,13 @@
         <!-- Campo Descifrar -->
         <div class="campo-descifrar">
             <div class="contenedor-descifrado">
-                <div class="descifrar-textarea">
-                    <textarea id="outputText" placeholder="Resultado..." class="inputText segundo-inputText"
-                        readonly></textarea>
-                </div>
+
+                <textarea id="outputText" placeholder="Resultado..." class="inputText segundo-inputText"
+                    readonly></textarea>
+
             </div>
 
-            <button onclick="copiar()" class="copiar">Copiar</button>
+            <button onclick="copiar(); guardar()" class="copiar">Copiar</button>
 
         </div>
     </div>

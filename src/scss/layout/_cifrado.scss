@@ -6,30 +6,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
-    width: 30rem;
-    height: 30rem;
+    width: 50rem;
+    height: 50rem;
     border: 1px solid blue;
     margin: 100px;
 
 }
+
 .contenedor-cifrado {
-    width: 30rem;
-    height: 20rem;
+    width: 50rem;
+    height: 50rem;
     background-color: v.$blanco;
     color: v.$primarioOscuro;
     border: 8px solid v.$secundario;
     border-radius: 2rem;
-
-
-    .inputText {
-        margin-top: 40px;
-        font-size: 25px;
-        padding-left: 20px;
-    }
-
-    .inputText::placeholder {
-        color: v.$secundarioClaro;
-        font-size: 2rem;
-    }
+    padding: 45px;
 }

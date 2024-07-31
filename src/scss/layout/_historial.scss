@@ -2,12 +2,25 @@
 
 .campo-historial {
     background-color: v.$secundarioClaro;
-    width: 100%;
+    width: 20%;
 }
 
 .campo-historial h2 {
     color: v.$primario;
     text-align: center;
-    border-bottom: 1px solid;
+    border-bottom: 10px solid;
     padding-bottom: 1rem;
+    font-size: 50px;
+}
+
+.contenedor-historial {
+    width: 100%;
+
+    #mensaje {
+        font-size: 40px;
+        div {
+            margin-top: 40px;
+            border-bottom: 1px solid;
+        }
+    }
 }
