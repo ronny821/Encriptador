@@ -1,26 +1,60 @@
 @use '../base/variables' as v;
 
-.campo-historial {
+
+
+.contenedor-historial {
     background-color: v.$secundarioClaro;
     width: 20%;
+    height: 100%;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 800px;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    padding-right: 10px;
+
+    .mensaje {
+        font-size: 15px;
+        color: v.$blanco;
+
+
+        .contenedor-botones {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            border-bottom: 1px solid v.$negro;
+            padding: 10px;
+        }
+
+        button:first-child {
+            grid-column: 1;
+            grid-row: 1;
+            width: 140px;
+        }
+
+        button:nth-child(2) {
+            grid-column: 2;
+            grid-row: 1;
+            width: 50px;
+        }
+
+        button:nth-child(3) {
+            grid-column: 3;
+            grid-row: 1;
+            width: 50px;
+        }
+    }
+
 }
 
-.campo-historial h2 {
+.contenedor-historial h2 {
     color: v.$primario;
     text-align: center;
     border-bottom: 10px solid;
     padding-bottom: 1rem;
-    font-size: 50px;
+    font-size: 30px;
 }
 
-.contenedor-historial {
-    width: 100%;
-
-    #mensaje {
-        font-size: 40px;
-        div {
-            margin-top: 40px;
-            border-bottom: 1px solid;
-        }
-    }
+.icono-borrar {
+    color: #b65353;
 }

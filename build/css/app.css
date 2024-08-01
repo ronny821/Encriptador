@@ -312,19 +312,14 @@ body {
 }
 
 button {
-  width: 20rem;
-  height: 4rem;
-  margin: 10px;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 15rem;
+  height: 3rem;
   border-radius: 25px;
   border: none;
   cursor: pointer;
-}
-
-.contenedor {
-  display: flex;
-  padding: 0;
-  height: 100vh;
-  margin: 0;
 }
 
 .inputText {
@@ -336,123 +331,120 @@ button {
   overflow-wrap: break-word;
 }
 
-.campo-cifrar {
+.contenedor {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 50rem;
-  height: 50rem;
-  border: 1px solid blue;
-  margin: 100px;
+  height: 100vh;
 }
 
-.contenedor-cifrado {
-  width: 50rem;
-  height: 50rem;
-  background-color: rgba(0, 0, 0, 0.631372549);
-  color: #fdfdfd;
-  border: 8px solid #397dd6;
-  border-radius: 2rem;
-  padding: 45px;
+.contenedor-cd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.campo-cifrar {
+  display: flex;
 }
 
 .campo-descifrar {
   display: none;
+}
+
+.campo-cifrar,
+.campo-descifrar {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 50rem;
-  height: 50rem;
-  border: 1px solid blue;
-  margin: 100px;
+  width: 25rem;
+  height: 23rem;
+  margin: 50px;
 }
 
+.contenedor-cifrado,
 .contenedor-descifrado {
-  padding: 45px;
-  height: 50rem;
-  width: 50rem;
+  width: 15rem;
+  height: 10rem;
   background-color: rgba(0, 0, 0, 0.631372549);
   color: #fdfdfd;
-  border-radius: 2rem;
   border: 8px solid #397dd6;
-}
-
-.inputText {
-  padding-right: 100px;
-  font-size: 45px;
-  color: #fdfdfd;
-}
-.inputText .inputText::placeholder {
-  font-size: 45px;
-  color: #7f94b1;
+  border-radius: 2rem;
+  padding: 45px;
 }
 
 .cifrar--contenedor-botones {
   display: flex;
   width: 100%;
-  margin-top: 50px;
 }
 
-.encriptar,
-.desencriptar {
+.encriptacion,
+.guardado {
+  background-color: #397dd6;
+  color: #fdfdfd;
+  margin: 10px;
+}
+
+.encriptacion {
   width: 100%;
 }
 
-.encriptar {
-  background-color: #397dd6;
-  color: #fdfdfd;
+.guardado {
+  width: 20rem;
 }
 
-.encriptar:hover {
+.encriptacion:hover,
+.guardado:hover {
   background-color: #7f94b1;
 }
 
-.desencriptar {
-  background-color: #397dd6;
-  color: #fdfdfd;
-  border: 1px solid #397dd6;
-}
-
-.desencriptar:hover {
-  background-color: #7f94b1;
-}
-
-.copiar {
-  width: 100%;
-  height: 100px;
-  background-color: #397dd6;
-  color: #fdfdfd;
-  border: 1px solid #397dd6;
-  margin-top: 50px;
-}
-
-.copiar:hover {
-  background-color: #7f94b1;
-}
-
-.campo-historial {
+.contenedor-historial {
   background-color: #7f94b1;
   width: 20%;
+  height: 100%;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  max-height: 800px;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  padding-right: 10px;
+}
+.contenedor-historial .mensaje {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.631372549);
+}
+.contenedor-historial .mensaje .contenedor-botones {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid #000;
+  padding: 10px;
+}
+.contenedor-historial .mensaje button:first-child {
+  grid-column: 1;
+  grid-row: 1;
+  width: 140px;
+}
+.contenedor-historial .mensaje button:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+  width: 50px;
+}
+.contenedor-historial .mensaje button:nth-child(3) {
+  grid-column: 3;
+  grid-row: 1;
+  width: 50px;
 }
 
-.campo-historial h2 {
+.contenedor-historial h2 {
   color: #101146;
   text-align: center;
   border-bottom: 10px solid;
   padding-bottom: 1rem;
-  font-size: 50px;
+  font-size: 30px;
 }
 
-.contenedor-historial {
-  width: 100%;
-}
-.contenedor-historial #mensaje {
-  font-size: 40px;
-}
-.contenedor-historial #mensaje div {
-  margin-top: 40px;
-  border-bottom: 1px solid;
+.icono-borrar {
+  color: #b65353;
 }
 
 .campo-mensaje {
@@ -460,10 +452,10 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 30rem;
+  margin-left: 50px;
+  width: 25rem;
   height: 30rem;
   border: 1px solid blue;
-  margin: 100px;
 }
 .campo-mensaje h2 {
   text-align: center;

@@ -5,9 +5,11 @@ body {
 }
 
 button {
-    width: 20rem;
-    height: 4rem;
-    margin: 10px;  
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 15rem;
+    height: 3rem;
     border-radius: 25px;
     border: none;
     cursor: pointer;

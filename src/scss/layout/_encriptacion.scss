@@ -4,31 +4,23 @@
 .cifrar--contenedor-botones {
     display: flex;
     width: 100%;
-    margin-top: 50px;
 }
 
-.encriptar,
-.desencriptar {
+.encriptacion,
+.guardado {
+    background-color: v.$secundario;
+    color: v.$primarioOscuro;
+    margin: 10px;
+}
+
+.encriptacion {
     width: 100%;
 }
-
-// Boton Encriptar
-.encriptar {
-    background-color: v.$secundario;
-    color: v.$primarioOscuro;
+.guardado {
+    width: 20rem;
 }
 
-.encriptar:hover {
-    background-color: v.$secundarioClaro;
-}
-
-// Boton Desencriptar
-.desencriptar {
-    background-color: v.$secundario;
-    color: v.$primarioOscuro;
-    border: 1px solid v.$secundario;
-}
-
-.desencriptar:hover {
+.encriptacion:hover,
+.guardado:hover {
     background-color: v.$secundarioClaro;
 }

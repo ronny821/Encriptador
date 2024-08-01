@@ -1,12 +1,4 @@
 
-.contenedor {
-    display: flex;
-    padding: 0;
-    height: 100vh;
-    margin: 0;
-
-}
-
 .inputText {
     all: unset;
     color: var(--primarioOscuro);
@@ -14,4 +6,8 @@
     height: 100%;
     white-space: pre-wrap; 
     overflow-wrap: break-word;
+}
+.contenedor {
+    display: flex;
+    height: 100vh;
 }

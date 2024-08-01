@@ -6,48 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
     <link rel="stylesheet" href="build/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
     <div class="contenedor">
 
         <!-- Campo Historial -->
-        <div class="campo-historial">
             <div class="contenedor-historial">
                 <h2>Historial</h2>
-                <div id="mensaje"></div>
-            </div>
-        </div>
-
-
-        <!-- Campo Cifrar -->
-        <div class="campo-cifrar">
-            <div class="contenedor-cifrado">
-                <textarea id="inputText" placeholder="Ingrese Texto Aquí" class="inputText"></textarea>
-            </div>
-            <div class="cifrar--contenedor-botones">
-                <button onclick="encriptar(); mostrarElemento()" class="encriptar" id="encriptar">Encriptar</button>
-                <button onclick="desencriptar(); mostrarElemento();" class="desencriptar">Desencriptar</button>
-            </div>
-        </div>
-
-        <div class="campo-mensaje">
-            <h2>Aún no se han realizado Encriptaciones</h2>
-        </div>
-
-        <!-- Campo Descifrar -->
-        <div class="campo-descifrar">
-            <div class="contenedor-descifrado">
-
-                <textarea id="outputText" placeholder="Resultado..." class="inputText segundo-inputText"
-                    readonly></textarea>
-
+                <div class="mensaje" id="mensaje"></div>
             </div>
 
-            <button onclick="copiar(); guardar()" class="copiar">Copiar</button>
+        <div class="contenedor-cd">
+            <!-- Campo Cifrar -->
+            <div class="campo-cifrar">
+                <div class="contenedor-cifrado">
+                    <textarea id="inputText" placeholder="Ingrese Texto Aquí" class="inputText"></textarea>
+                </div>
+                <div class="cifrar--contenedor-botones">
+                    <button onclick="encriptar(); mostrarElemento()" class="encriptacion" id="encriptar">Encriptar</button>
+                    <button onclick="desencriptar(); mostrarElemento();" class="encriptacion">Desencriptar</button>
+                </div>
+            </div>
 
+            <div class="campo-mensaje">
+                <h2>Aún no se han realizado Encriptaciones</h2>
+            </div>
+
+            <!-- Campo Descifrar -->
+            <div class="campo-descifrar">
+                <div class="contenedor-descifrado">
+
+                    <textarea id="outputText" placeholder="Resultado..." class="inputText segundo-inputText"
+                        readonly></textarea>
+                </div>
+                <div class="cifrar--contenedor-botones">
+                    <button onclick="copiar()" class="guardado">Copiar</button>
+                    <button onclick="guardar()" class="guardado">Guardar</button>
+                </div>
+            </div>
         </div>
-    </div>
     </div>
 
 
