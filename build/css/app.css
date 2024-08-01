@@ -340,7 +340,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px;
 }
 
 .campo-cifrar {
@@ -399,14 +398,13 @@ button {
 
 .contenedor-historial {
   background-color: #7f94b1;
-  width: 20%;
+  width: 100%;
   height: 100%;
   flex-wrap: wrap;
   overflow-y: auto;
   max-height: 800px;
   overflow-x: hidden;
   scrollbar-width: thin;
-  padding-right: 10px;
 }
 .contenedor-historial .mensaje {
   font-size: 15px;
@@ -453,6 +451,7 @@ button {
   align-items: center;
   justify-content: space-between;
   margin-left: 50px;
+  margin-right: 50px;
   width: 25rem;
   height: 30rem;
   border: 1px solid blue;

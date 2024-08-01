@@ -4,14 +4,13 @@
 
 .contenedor-historial {
     background-color: v.$secundarioClaro;
-    width: 20%;
+    width: 100%;
     height: 100%;
     flex-wrap: wrap;
     overflow-y: auto;
     max-height: 800px;
     overflow-x: hidden;
     scrollbar-width: thin;
-    padding-right: 10px;
 
     .mensaje {
         font-size: 15px;

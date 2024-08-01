@@ -64,6 +64,7 @@ function guardar() {
     iconoEditar.className = 'fas fa-edit icono-editar'; 
     botonEditar.appendChild(iconoEditar);
 
+    
     // Crear un nuevo botón para borrar
     const botonBorrar = document.createElement('button');
     const iconoBorrar = document.createElement('i');
